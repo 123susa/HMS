@@ -1,0 +1,103 @@
+/* dashboard style */
+.top-menu {
+    background-color: #194489;
+}
+.top-menu .navbar-brand span{
+    color: aliceblue;
+}
+
+.top-menu .profile .show a{
+    text-decoration: none;
+}
+.top-menu .profile .show .dropdown-menu .profile-item{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    /* justify-content: center; */
+    
+}
+.top-menu .profile .show .dropdown-menu .profile-item a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    margin-left: 10px;
+    padding: 5px 0px;
+    color: #000;
+}
+.top-menu .profile .show .dropdown-menu .profile-item button{
+    outline: none;
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    margin-left: 10px;
+    padding: 5px 0px;
+    color: #000;
+}
+
+.hidden {
+    display: none;
+}
+
+/* menu style */
+.menu >ul{
+    /* text-decoration: none;
+    list-style: none; */
+    list-style-type: none;
+}
+.menu >ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    /* font-weight: bold; */
+}
+.menu >ul>li>a>i{
+    color: #194489;
+    font-size: 35px;
+}
+.menu >ul>li>a>i:hover{
+
+    background-color: #194489;
+    color: aliceblue;
+}
+
+
+/* profile */
+.profile >.pimage{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 4px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pimage >img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.profile .detail{
+    margin-left: 30px;
+}
+@media screen and (max-width:770px) {
+        .profile{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    .profile >.pimage{
+        width: 150px;
+        height: 150px;
+    }
+    .pimage >img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    .profile .detail{
+        margin-left: 30px;
+    }
+}
